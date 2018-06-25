@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>table, td, tr, th {border:1px solid black;}</style>
+	<title>Exercice 5</title>
+</head>
+<body>
+<h1> Formulaire de contact</h1>
+
+<form method="POST" action="mailto:laetitia.rampacek@iut-dijon.u-bourgogne.fr" enctype="text/plain">
+<table>
+<tr>
+<th>
+<b>Vos coordonnées</b>
+</th>
+</tr>
+<tr>
+<td>
+<p>Nom <input type="text" name="Nom" value="" size=50 /> Prénom <input type="text" name="Prénom" value="" size=50 /></p>
+<p>Date de naissance <input type="text" name="Date de naissance" value="jj/mm/aaaa" size=20 /> Lieu de naissance <input type="text" name="Lieu de naissance" value="" size=100 /></p>
+<p>Sexe <input type="radio" name="sexe" value="Masculin" /> Masculin
+        <input type="radio" name="sexe" value="Féminin" /> Féminin
+		<input type="radio" name="sexe" value="Indéterminé" /> Indéterminé</p>
+<p>
+Adresse (Numéro,Rue) : <input type="text" name="adresse" value="" />
+					   <select name="adresse">
+					   <option>rue</option>
+					   <option>avenue</option>
+					   <option>bd</option>
+					   <option>allée</option>
+					   <option>impasse</option>
+					   <option>place</option>
+					   <option>lieu-dit</option>
+					   <option>square</option>
+					   </select>
+<input type="text" name="adresse" value="" size=30 />
+
+<fieldset>
+<legend>Ajout:</legend>
+<input type="color" value="#ff0000">
+<input type="date">
+<input type="datetime-local"> 
+<input type="email">
+<input type="month">
+<input type="number">
+<input type="range">
+<input type="search">
+<input type="tel">
+<input type="time">
+<input type="url">
+<input type="week">
+</fieldset>
+
+</p>
+<p>
+Code Postal : <input type="text" name="adresse" value="" size="5" />
+Ville : <input type="text" name="adresse" value="" size="60" />
+</p>
+<p>
+Adresse Electronique : <input type="text" name="adresse" value="" size="100" />
+</p>
+</td>
+</tr>
+</table>
+<p>Commentaires : </p>
+<textarea name="commentaires" rows="5" cols="50">
+</textarea>
+<table>
+<tr>
+<td>
+<p>
+Envoyer le formulaire : <input type="submit" value="Envoi" /> Effacer le formulaire : <input type="reset" value="Réinitialiser" />
+</p>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
